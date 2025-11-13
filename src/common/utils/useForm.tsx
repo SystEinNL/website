@@ -13,7 +13,8 @@ const initialValues: IValues = {
   message: "",
 };
 
-const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_EMAIL || "info@systein.nl";
+const CONTACT_EMAIL =
+  process.env.REACT_APP_CONTACT_EMAIL || "574318fb9ddde79f93ba0db2857f2063";
 const CONTACT_ENDPOINT =
   process.env.REACT_APP_CONTACT_ENDPOINT ||
   (CONTACT_EMAIL ? `https://formsubmit.co/ajax/${CONTACT_EMAIL}` : "");
