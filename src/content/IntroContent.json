@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Specialized AI Solutions for Humans",
+  "text": "SystEin builds tailored AI agents that solve real problems, not just demo problems. Our first product, Coach Irene, is an ADHD-focused coach that helps you turn intentions into action with gentle, structured support.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Meet Coach Irene"
     },
     {
-      "title": "Learn more",
+      "title": "Work with SystEin",
       "color": "#fff"
     }
   ]

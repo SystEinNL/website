@@ -1,4 +1,13 @@
 {
-  "title": "That's about it!",
-  "text": "If you are familiar with React, or SPA frameworks in general, there shouldn't be any confusing parts about this template. if not, you can always reach out to me and I'll try me best to answer your questions."
+  "title": "Coach Irene – your ADHD-friendly digital coach",
+  "text": "Coach Irene is an AI-powered coach for people who struggle with focus, planning, and follow-through. It helps you:\n\n• Turn vague intentions into concrete next steps\n• Estimate how long tasks will take and break them into smaller chunks\n• Schedule gentle check-ins and reflections\n\nCoach Irene does not diagnose or treat ADHD—it supports your existing routines and, if applicable, your work with professionals. If you want to explore how Coach Irene or a similar agent could be customized for your organization, SystEin can help.",
+  "button": [
+    {
+      "title": "Try Coach Irene"
+    },
+    {
+      "title": "Book a Meeting",
+      "color": "#fff"
+    }
+  ]
 }

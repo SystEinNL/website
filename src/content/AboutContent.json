@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Thoughtful, focused & reliable AI",
+  "text": "SystEin is a one-person AI studio focused on building a few high-quality agents instead of many shallow ones. Everything is designed to be fast, privacy-aware, and easy to integrate into your existing workflows.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why SystEin?",
+      "content": "You get direct access to the engineer building your solution. No layers of sales or buzzwords—just clear requirements, transparent design choices, and AI that actually fits your context.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Coach Irene?",
+      "content": "Coach Irene is designed for people with ADHD traits who need structure without pressure. It helps with planning, breaking tasks into smaller steps, and checking in—always as a coach, never as a medical professional.",
       "icon": "notes.svg"
     }
   ]
