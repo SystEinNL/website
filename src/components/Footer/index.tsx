@@ -147,6 +147,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src="github.svg"
               />
               <SocialLink
+                href="https://twitter.com/systein"
+                src="twitter.svg"
+              />
+              <SocialLink
                 href="https://www.linkedin.com/company/systein"
                 src="linkedin.svg"
               />
