@@ -50,34 +50,6 @@ const Footer = ({ t }: { t: TFunction }) => {
       <FooterSection>
         <Container>
           <Row justify="space-between">
-            {/* Contact column */}
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
-              <a href="mailto:info@systein.nl">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
-            </Col>
-
-            {/* Policy column */}
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/privacy">{t("Application Security")}</Large>
-              <Large to="/privacy">{t("Software Principles")}</Large>
-            </Col>
-
-            {/* Support column */}
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large to="/support">{t("Support Center")}</Large>
-              <Large to="/support">{t("Customer Support")}</Large>
-            </Col>
-          </Row>
-
-          <Row justify="space-between">
             {/* Address column */}
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
@@ -91,10 +63,9 @@ const Footer = ({ t }: { t: TFunction }) => {
             {/* Company / navigation column */}
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
-              <Large to="/about">{t("About")}</Large>
-              <Large to="/product">{t("Product")}</Large>
-              <Large to="/mission">{t("Mission")}</Large>
-              <Large to="/policy">{t("Policy")}</Large>
+              <Large to="/Policy">{t("Privacy Policy")}</Large>
+              <Large to="/ToC">{t("Terms & Conditions")}</Large>
+              <Large to="/Legal">{t("Legal Notice")}</Large>
             </Col>
 
             {/* Language switch */}
