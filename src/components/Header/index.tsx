@@ -25,10 +25,17 @@ const Header = ({ t }: { t: TFunction }) => {
 
   const MenuItem = () => {
     const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      } else if (typeof window !== "undefined") {
+        const target = `/#${id}`;
+        if (window.location.pathname !== "/" && window.location.pathname !== "/Home") {
+          window.location.href = target;
+        }
+      }
       setVisibility(false);
     };
     return (

@@ -52,9 +52,8 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             {/* Address column */}
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
               <Language>{t("Address")}</Language>
-              <Para>SYSTEIN Solutions</Para>
+              <Para>SYSTEIN Solutions (KVK: 98786350)</Para>
               <Para>De Lismortel 42 366</Para>
               <Para>5612 AR Eindhoven</Para>
               <Para>The Netherlands</Para>
@@ -62,10 +61,10 @@ const Footer = ({ t }: { t: TFunction }) => {
 
             {/* Company / navigation column */}
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
+              <Title>{t("Legal")}</Title>
               <Large to="/Policy">{t("Privacy Policy")}</Large>
-              <Large to="/ToC">{t("Terms & Conditions")}</Large>
-              <Large to="/Imprint">{t("Legal Notice")}</Large>
+              <Large to="/Terms">{t("Terms & Conditions")}</Large>
+              <Large to="/Imprint">{t("Imprint")}</Large>
             </Col>
 
             {/* Language switch */}

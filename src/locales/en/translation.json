@@ -19,13 +19,287 @@
   "Learn more": "Learn more",
   "Get started": "Get started",
   "Submit": "Submit",
-  "Message" : "Message",
+  "Message": "Message",
   "Your Message": "Your Message",
-  "Name" : "Name",
+  "Name": "Name",
   "Your Name": "Your Name",
-  "Email" : "Email",
+  "Email": "Email",
   "Your Email": "Your Email",
   "Privacy Policy": "Privacy Policy",
   "Terms & Conditions": "Terms & Conditions",
-  "Legal Notice": "Legal Notice"
+  "Legal Notice": "Legal Notice",
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": [
+        "Last updated: 13 November 2025",
+        "SYSTEIN Solutions (\"SYSTEIN\", \"we\", \"our\") is a sole proprietorship established in the Netherlands. This Privacy Policy describes how we process personal data in connection with our AI-based products and services, including the AI coaching system Coach Irene, in line with the GDPR and Dutch law."
+      ],
+      "sections": [
+        {
+          "title": "Data Controller",
+          "paragraphs": [
+            "SYSTEIN Solutions – Eenmanszaak",
+            "De Lismortel 42 366, 5612 AR Eindhoven, The Netherlands",
+            "Email: info@systein.nl",
+            "Website: www.systein.nl"
+          ]
+        },
+        {
+          "title": "Categories of Personal Data",
+          "paragraphs": [
+            "Depending on how you interact with us we may process the following data:"
+          ],
+          "list": [
+            "Identification and contact data such as name and email address",
+            "Account and subscription data",
+            "Information you provide via forms, email, or other communication channels",
+            "Interaction data generated when you use AI-based services such as Coach Irene",
+            "Technical data (for example IP address and timestamp) stored in server logs"
+          ]
+        },
+        {
+          "title": "Purposes of Processing",
+          "paragraphs": [
+            "We process personal data for the following purposes:"
+          ],
+          "list": [
+            "Providing and maintaining our services, including AI-based coaching",
+            "Managing subscriptions, billing, and payment administration",
+            "Responding to questions, feedback, and support requests",
+            "Monitoring system security and preventing abuse",
+            "Complying with legal obligations"
+          ]
+        },
+        {
+          "title": "Legal Bases",
+          "paragraphs": [
+            "We rely on different legal bases depending on the context:"
+          ],
+          "list": [
+            "Performance of a contract (Article 6(1)(b) GDPR)",
+            "Compliance with legal obligations (Article 6(1)(c) GDPR)",
+            "Legitimate interests such as service security and improvement (Article 6(1)(f) GDPR)",
+            "Consent where explicitly requested (Article 6(1)(a) GDPR)"
+          ]
+        },
+        {
+          "title": "Cookies and Tracking",
+          "paragraphs": [
+            "We do not use cookies or similar tracking technologies for analytics or marketing. Our servers only register technical logs, such as IP address and access time, for security and diagnostic purposes."
+          ]
+        },
+        {
+          "title": "Data Retention",
+          "paragraphs": [
+            "Personal data is kept only for as long as necessary for the purposes described or as required by law. AI interaction data is anonymised or pseudonymised where possible. Financial and invoicing records may be retained for at least seven years to comply with Dutch tax regulations."
+          ]
+        },
+        {
+          "title": "Data Sharing",
+          "paragraphs": [
+            "We do not sell your personal data. Limited data may be shared with trusted partners when necessary to provide the services:",
+            "All processors are bound by written data processing agreements that comply with GDPR requirements."
+          ],
+          "list": [
+            "Payment service providers that process subscription payments",
+            "Hosting and infrastructure providers that help us operate our services",
+            "Public authorities when required by law or court order"
+          ]
+        },
+        {
+          "title": "International Transfers",
+          "paragraphs": [
+            "Where personal data is transferred outside the European Economic Area (EEA) we implement appropriate safeguards such as Standard Contractual Clauses or equivalent mechanisms required by EU law."
+          ]
+        },
+        {
+          "title": "Your Rights",
+          "paragraphs": [
+            "You have the following rights under the GDPR:"
+          ],
+          "list": [
+            "Right of access to your personal data",
+            "Right to rectification of inaccurate or incomplete data",
+            "Right to erasure (\"right to be forgotten\") under certain conditions",
+            "Right to restriction of processing",
+            "Right to data portability",
+            "Right to object to certain processing activities",
+            "Right to withdraw consent at any time where processing is based on consent"
+          ]
+        },
+        {
+          "title": "Contact for Privacy Requests",
+          "paragraphs": [
+            "You can exercise your rights or raise concerns by emailing info@systein.nl. You also have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)."
+          ]
+        },
+        {
+          "title": "AI-Specific Information",
+          "paragraphs": [
+            "Coach Irene is an AI-based coaching tool and does not provide medical, psychological, therapeutic, or diagnostic services. Outputs generated by the AI may be incomplete, inaccurate, or inappropriate for your personal situation. You remain responsible for decisions made on the basis of AI outputs and should not use the service as a substitute for professional medical or psychological care."
+          ]
+        },
+        {
+          "title": "Security Measures",
+          "paragraphs": [
+            "We take reasonable technical and organisational measures to protect personal data against unauthorised access, loss, misuse, or alteration. However, no system can be guaranteed to be fully secure."
+          ]
+        },
+        {
+          "title": "Changes to This Policy",
+          "paragraphs": [
+            "We may update this Privacy Policy from time to time. The most recent version will always be available on our website. Continued use of our services after an update constitutes acceptance of the revised policy."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "intro": [
+        "Last updated: 13 November 2025",
+        "These Terms and Conditions apply to all offers, quotations, subscriptions, agreements, and services provided by SYSTEIN Solutions (\"SYSTEIN\"), unless expressly agreed otherwise in writing."
+      ],
+      "sections": [
+        {
+          "title": "Definitions",
+          "list": [
+            "\"SYSTEIN\": SYSTEIN Solutions, a sole proprietorship established in the Netherlands.",
+            "\"Client\": any natural or legal person who purchases or uses services from SYSTEIN.",
+            "\"Services\": all AI-related software, coaching systems, subscriptions, and consultancy provided by SYSTEIN.",
+            "\"Product\": the AI-based coaching system known as \"Coach Irene\".",
+            "\"Agreement\": any contract or subscription between SYSTEIN and the Client."
+          ]
+        },
+        {
+          "title": "Scope",
+          "paragraphs": [
+            "These Terms and Conditions govern every use of our services unless another written agreement explicitly states otherwise."
+          ]
+        },
+        {
+          "title": "Nature of Services and AI Disclaimer",
+          "paragraphs": [
+            "Coach Irene and related AI services are intended to provide AI-generated suggestions and structure for productivity."
+          ],
+          "list": [
+            "The services do not constitute medical, psychological, therapeutic, legal, or financial advice.",
+            "AI outputs may be incomplete, inaccurate, or inappropriate.",
+            "Clients remain responsible for their own decisions and actions taken on the basis of AI outputs.",
+            "The services are not a substitute for professional medical or psychological treatment or diagnosis."
+          ]
+        },
+        {
+          "title": "Subscription, Payment, and Refunds",
+          "list": [
+            "Services are offered on a monthly subscription basis unless otherwise agreed in writing.",
+            "Subscription fees are payable in advance at the start of each billing period.",
+            "If payment is not received on time, SYSTEIN may suspend or terminate access to the services.",
+            "Subscription fees are non-refundable once the billing period has started.",
+            "No partial refunds are granted for unused days or early termination within a billing period.",
+            "The Client is responsible for any taxes, levies, or charges imposed by authorities."
+          ]
+        },
+        {
+          "title": "Intellectual Property",
+          "list": [
+            "All intellectual property rights in the software, models, prompts, documentation, and configurations remain with SYSTEIN or its licensors.",
+            "Clients receive a limited, non-exclusive, non-transferable licence to use the services for internal purposes during the term of the agreement.",
+            "Clients may not copy, modify, reverse engineer, resell, sublicense, or otherwise commercially exploit the services without prior written permission."
+          ]
+        },
+        {
+          "title": "Availability and Maintenance",
+          "list": [
+            "SYSTEIN aims to provide the services with reasonable care and skill but does not guarantee uninterrupted or error-free operation.",
+            "Maintenance or updates may temporarily affect availability. Where reasonable, such maintenance will be scheduled to minimise impact."
+          ]
+        },
+        {
+          "title": "Limitation of Liability",
+          "list": [
+            "SYSTEIN is only liable for direct damages resulting from intent or gross negligence.",
+            "SYSTEIN is not liable for indirect or consequential damages, including loss of profit, data, or business interruption.",
+            "Total aggregate liability is limited to the fees paid by the client in the three months preceding the event giving rise to liability.",
+            "Nothing in these Terms limits liability where limitation is not permitted by law."
+          ]
+        },
+        {
+          "title": "Term and Termination",
+          "list": [
+            "Subscriptions run for an indefinite period with monthly billing unless stated otherwise.",
+            "Clients may terminate the subscription at any time with effect from the next billing period.",
+            "SYSTEIN may terminate or suspend access with immediate effect if the client fails to meet payment obligations, misuses the services, or materially breaches these Terms."
+          ]
+        },
+        {
+          "title": "Force Majeure",
+          "paragraphs": [
+            "SYSTEIN is not liable for failure or delay caused by circumstances beyond its reasonable control, including network failures, power outages, strikes, pandemics, or acts of government."
+          ]
+        },
+        {
+          "title": "Applicable Law and Disputes",
+          "list": [
+            "These Terms and all agreements are governed by the laws of the Netherlands.",
+            "Disputes are submitted to the competent court in the district of Oost-Brabant, unless mandatory law prescribes otherwise."
+          ]
+        },
+        {
+          "title": "Changes to These Terms",
+          "paragraphs": [
+            "SYSTEIN may amend these Terms and Conditions from time to time. The updated version will be published on the website. Continued use of the services after changes take effect constitutes acceptance of the updated Terms."
+          ]
+        }
+      ]
+    },
+    "imprint": {
+      "title": "Legal Notice",
+      "intro": [
+        "SYSTEIN Solutions – Eenmanszaak is responsible for this website and the AI-based services offered through it.",
+        "The information below fulfils the legal notice (Imprint) requirements under Dutch law."
+      ],
+      "sections": [
+        {
+          "title": "Business Details",
+          "list": [
+            "De Lismortel 42 366, 5612 AR Eindhoven, The Netherlands",
+            "Business structure: Sole proprietorship (eenmanszaak)",
+            "Jurisdiction: The Netherlands"
+          ]
+        },
+        {
+          "title": "Contact",
+          "list": [
+            "Email: info@systein.nl",
+            "Website: www.systein.nl"
+          ]
+        },
+        {
+          "title": "Purpose of the Website",
+          "paragraphs": [
+            "SYSTEIN provides AI-based software and related services, including the AI coaching system Coach Irene. All information on this website is provided for general informational purposes only and may be changed without notice."
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "paragraphs": [
+            "Although we strive to keep the information on this website accurate and up to date, SYSTEIN makes no warranties regarding the completeness, accuracy, reliability, or availability of the website or the information contained on it. Use of the website and services is at your own risk."
+          ]
+        },
+        {
+          "title": "AI Disclaimer",
+          "paragraphs": [
+            "AI-generated outputs may be inaccurate, incomplete, or inappropriate. The website and services do not provide medical, psychological, legal, or financial advice and do not replace professional care or consultation."
+          ]
+        },
+        {
+          "title": "Liability",
+          "paragraphs": [
+            "SYSTEIN is not liable for damages arising from or related to the use of this website or the services, except where liability cannot be excluded under applicable law."
+          ]
+        }
+      ]
+    }
+  }
 }

@@ -6,6 +6,8 @@ export const StyledButton = styled("button")<{ color?: string }>`
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
+  display: inline-block;
+  text-align: center;
   border: 1px solid #edf3f5;
   border-radius: 4px;
   padding: 13px 0;
@@ -21,5 +23,8 @@ export const StyledButton = styled("button")<{ color?: string }>`
     color: #fff;
     border: 1px solid rgb(255, 130, 92);
     background-color: rgb(255, 130, 92);
+    text-decoration: none;
   }
+
+  text-decoration: none;
 `;

@@ -53,18 +53,17 @@ const ContentBlock = ({
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
+                      (item, id: number) => {
                         return (
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={
+                              item.link ? undefined : () => scrollTo("about")
+                            }
+                            href={item.link}
+                            target={item.target}
+                            rel={item.rel}
                           >
                             {t(item.title)}
                           </Button>

@@ -27,5 +27,279 @@
   "Your Email": "Jouw e-mail",
   "Privacy Policy": "Privacybeleid",
   "Terms & Conditions": "Algemene voorwaarden",
-  "Legal Notice": "Juridische kennisgeving"
+  "Legal Notice": "Juridische kennisgeving",
+  "legal": {
+    "privacy": {
+      "title": "Privacybeleid",
+      "intro": [
+        "Laatst bijgewerkt: 13 November 2025",
+        "SYSTEIN Solutions (\"SYSTEIN\", \"wij\", \"ons\") is een eenmanszaak gevestigd in Nederland. Dit privacybeleid beschrijft hoe wij persoonsgegevens verwerken voor onze AI-diensten, waaronder het AI-coachsysteem Coach Irene, in overeenstemming met de AVG en de Nederlandse wet."
+      ],
+      "sections": [
+        {
+          "title": "Verwerkingsverantwoordelijke",
+          "paragraphs": [
+            "SYSTEIN Solutions – Eenmanszaak",
+            "De Lismortel 42 366, 5612 AR Eindhoven, Nederland",
+            "E-mail: info@systein.nl",
+            "Website: www.systein.nl"
+          ]
+        },
+        {
+          "title": "Categorieën persoonsgegevens",
+          "paragraphs": [
+            "Afhankelijk van de manier waarop je met ons communiceert kunnen wij de volgende gegevens verwerken:"
+          ],
+          "list": [
+            "Identificatie- en contactgegevens zoals naam en e-mailadres",
+            "Account- en abonnementsgegevens",
+            "Informatie die je verstrekt via formulieren, e-mail of andere communicatiemiddelen",
+            "Interactiegegevens die ontstaan bij het gebruik van AI-diensten zoals Coach Irene",
+            "Technische gegevens (bijvoorbeeld IP-adres en tijdstip) die worden opgeslagen in serverlogs"
+          ]
+        },
+        {
+          "title": "Doeleinden van de verwerking",
+          "paragraphs": [
+            "Wij verwerken persoonsgegevens voor de volgende doeleinden:"
+          ],
+          "list": [
+            "Het leveren en onderhouden van onze diensten, inclusief AI-coaching",
+            "Het beheren van abonnementen, facturatie en betalingsadministratie",
+            "Het beantwoorden van vragen, feedback en supportverzoeken",
+            "Het monitoren van systeembeveiliging en het voorkomen van misbruik",
+            "Het voldoen aan wettelijke verplichtingen"
+          ]
+        },
+        {
+          "title": "Rechtsgronden",
+          "paragraphs": [
+            "Afhankelijk van de situatie baseren wij de verwerking op de volgende rechtsgronden:"
+          ],
+          "list": [
+            "Uitvoering van een overeenkomst (artikel 6 lid 1 sub b AVG)",
+            "Wettelijke verplichting (artikel 6 lid 1 sub c AVG)",
+            "Gerechtvaardigd belang, zoals dienstbeveiliging en verbetering (artikel 6 lid 1 sub f AVG)",
+            "Toestemming indien expliciet gevraagd (artikel 6 lid 1 sub a AVG)"
+          ]
+        },
+        {
+          "title": "Cookies en tracking",
+          "paragraphs": [
+            "Wij gebruiken geen cookies of vergelijkbare trackingtechnologieën voor analyse- of marketingdoeleinden. Onze servers registreren uitsluitend technische logs, zoals IP-adres en tijdstip, voor beveiligings- en diagnostische doeleinden."
+          ]
+        },
+        {
+          "title": "Bewaartermijnen",
+          "paragraphs": [
+            "Persoonsgegevens worden niet langer bewaard dan noodzakelijk voor de hierboven beschreven doeleinden of zolang de wet dit vereist. AI-interactiegegevens worden waar mogelijk geanonimiseerd of gepseudonimiseerd. Financiële en administratieve gegevens kunnen minimaal zeven jaar worden bewaard om te voldoen aan de Nederlandse belastingwetgeving."
+          ]
+        },
+        {
+          "title": "Gegevensdeling",
+          "paragraphs": [
+            "Wij verkopen jouw persoonsgegevens niet. Beperkte gegevens kunnen worden gedeeld met vertrouwde partners wanneer dit nodig is om de diensten te leveren:",
+            "Alle verwerkers zijn gebonden aan schriftelijke verwerkersovereenkomsten die voldoen aan de eisen van de AVG."
+          ],
+          "list": [
+            "Betaaldienstverleners die abonnementsgelden verwerken",
+            "Hosting- en infrastructuurpartners die onze diensten laten draaien",
+            "Overheidsinstanties wanneer dit wettelijk verplicht is"
+          ]
+        },
+        {
+          "title": "Doorgifte buiten de EER",
+          "paragraphs": [
+            "Wanneer persoonsgegevens buiten de Europese Economische Ruimte (EER) worden doorgegeven treffen wij passende waarborgen, zoals standaardcontractbepalingen of gelijkwaardige mechanismen die door de EU zijn goedgekeurd."
+          ]
+        },
+        {
+          "title": "Uw rechten",
+          "paragraphs": [
+            "Op grond van de AVG heb je onder meer recht op:"
+          ],
+          "list": [
+            "Inzage in jouw persoonsgegevens",
+            "Rectificatie van onjuiste of onvolledige gegevens",
+            "Verwijdering van gegevens (het \"recht om vergeten te worden\") onder bepaalde voorwaarden",
+            "Beperking van de verwerking",
+            "Overdraagbaarheid van gegevens",
+            "Bezwaar tegen bepaalde verwerkingen",
+            "Intrekking van toestemming indien de verwerking daarop is gebaseerd"
+          ]
+        },
+        {
+          "title": "Contact voor privacyverzoeken",
+          "paragraphs": [
+            "Je kunt jouw rechten uitoefenen of vragen stellen via info@systein.nl. Je hebt daarnaast het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens."
+          ]
+        },
+        {
+          "title": "AI-specifieke informatie",
+          "paragraphs": [
+            "Coach Irene is een AI-gebaseerd hulpmiddel en biedt geen medisch, psychologisch, therapeutisch of diagnostisch advies. De AI-uitvoer kan onvolledig, onjuist of niet passend zijn voor jouw situatie. Je blijft zelf verantwoordelijk voor beslissingen die je op basis van AI-uitvoer neemt en de dienst vervangt geen professionele (medische of psychologische) hulp."
+          ]
+        },
+        {
+          "title": "Beveiligingsmaatregelen",
+          "paragraphs": [
+            "Wij nemen passende technische en organisatorische maatregelen om persoonsgegevens te beschermen tegen ongeoorloofde toegang, verlies, misbruik of wijziging. Geen enkel systeem kan echter volledige veiligheid garanderen."
+          ]
+        },
+        {
+          "title": "Wijzigingen in dit beleid",
+          "paragraphs": [
+            "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. De meest recente versie is altijd beschikbaar op onze website. Voortgezet gebruik van onze diensten na een update betekent dat je het aangepaste beleid accepteert."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Algemene voorwaarden",
+      "intro": [
+        "Laatst bijgewerkt: 13 November 2025",
+        "Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen, offertes, abonnementen, overeenkomsten en diensten van SYSTEIN Solutions (\"SYSTEIN\"), tenzij schriftelijk anders is overeengekomen."
+      ],
+      "sections": [
+        {
+          "title": "Definities",
+          "list": [
+            "\"SYSTEIN\": SYSTEIN Solutions, een eenmanszaak in Nederland.",
+            "\"Klant\": iedere natuurlijke of rechtspersoon die diensten van SYSTEIN afneemt of gebruikt.",
+            "\"Diensten\": alle door SYSTEIN geleverde AI-software, coachingssystemen, abonnementen en consultancy.",
+            "\"Product\": het AI-coachsysteem onder de naam \"Coach Irene\".",
+            "\"Overeenkomst\": ieder contract of abonnement tussen SYSTEIN en de Klant."
+          ]
+        },
+        {
+          "title": "Reikwijdte",
+          "paragraphs": [
+            "Deze voorwaarden regelen elk gebruik van onze diensten, tenzij een andere schriftelijke overeenkomst uitdrukkelijk anders bepaalt."
+          ]
+        },
+        {
+          "title": "Aard van de diensten en AI-disclaimer",
+          "paragraphs": [
+            "Coach Irene en aanverwante AI-diensten bieden AI-gegenereerde suggesties en structuur voor productiviteit."
+          ],
+          "list": [
+            "De diensten vormen geen medisch, psychologisch, therapeutisch, juridisch of financieel advies.",
+            "AI-uitvoer kan onvolledig, onjuist of niet passend zijn.",
+            "Klanten blijven verantwoordelijk voor beslissingen en handelingen op basis van AI-uitvoer.",
+            "De diensten vervangen geen professionele medische of psychologische behandeling of diagnose."
+          ]
+        },
+        {
+          "title": "Abonnement, betaling en restituties",
+          "list": [
+            "Diensten worden standaard als maandabonnement aangeboden, tenzij schriftelijk anders is afgesproken.",
+            "Abonnementskosten worden bij aanvang van iedere factuurperiode vooruitbetaald.",
+            "Bij uitblijven van betaling mag SYSTEIN de toegang tot de diensten opschorten of beëindigen.",
+            "Abonnementskosten worden niet terugbetaald zodra de factuurperiode is gestart.",
+            "Er worden geen gedeeltelijke restituties verleend voor ongebruikte dagen of tussentijdse beëindiging binnen een factuurperiode.",
+            "De Klant is verantwoordelijk voor eventuele belastingen, heffingen of overige toeslagen."
+          ]
+        },
+        {
+          "title": "Intellectuele eigendom",
+          "list": [
+            "Alle intellectuele eigendomsrechten op software, modellen, prompts, documentatie en configuraties blijven bij SYSTEIN of diens licentiegevers.",
+            "De Klant ontvangt een beperkt, niet-exclusief en niet-overdraagbaar gebruiksrecht voor interne doeleinden gedurende de looptijd van de overeenkomst.",
+            "De Klant mag de diensten niet kopiëren, wijzigen, reverse engineeren, doorverkopen, in sublicentie geven of anderszins commercieel benutten zonder schriftelijke toestemming."
+          ]
+        },
+        {
+          "title": "Beschikbaarheid en onderhoud",
+          "list": [
+            "SYSTEIN levert de diensten met redelijke zorg maar garandeert geen ononderbroken of foutloze werking.",
+            "Onderhoud of updates kunnen tijdelijk invloed hebben op de beschikbaarheid. Waar mogelijk wordt onderhoud gepland om de impact te beperken."
+          ]
+        },
+        {
+          "title": "Aansprakelijkheidsbeperking",
+          "list": [
+            "SYSTEIN is slechts aansprakelijk voor directe schade die het gevolg is van opzet of grove nalatigheid.",
+            "SYSTEIN is niet aansprakelijk voor indirecte of gevolgschade, waaronder winst- of gegevensverlies of bedrijfsstilstand.",
+            "De totale aansprakelijkheid is beperkt tot de vergoedingen die de Klant in de drie maanden voorafgaand aan het schadevoorval heeft betaald.",
+            "Niets in deze voorwaarden beperkt aansprakelijkheid indien beperking wettelijk niet is toegestaan."
+          ]
+        },
+        {
+          "title": "Duur en beëindiging",
+          "list": [
+            "Abonnementen hebben een onbepaalde looptijd met maandelijkse facturatie, tenzij anders vermeld.",
+            "De Klant kan het abonnement op ieder moment beëindigen met ingang van de volgende factuurperiode.",
+            "SYSTEIN kan de overeenkomst beëindigen of toegang onmiddellijk opschorten indien de Klant betalingsverplichtingen niet nakomt, de diensten misbruikt of deze voorwaarden wezenlijk schendt."
+          ]
+        },
+        {
+          "title": "Overmacht",
+          "paragraphs": [
+            "SYSTEIN is niet aansprakelijk voor tekortkomingen die worden veroorzaakt door omstandigheden buiten haar redelijke controle, zoals netwerkstoringen, stroomuitval, stakingen, pandemieën of overheidsmaatregelen."
+          ]
+        },
+        {
+          "title": "Toepasselijk recht en geschillen",
+          "list": [
+            "Op deze voorwaarden en alle overeenkomsten is Nederlands recht van toepassing.",
+            "Geschillen worden voorgelegd aan de bevoegde rechter in het arrondissement Oost-Brabant, tenzij dwingend recht anders voorschrijft."
+          ]
+        },
+        {
+          "title": "Wijzigingen in deze voorwaarden",
+          "paragraphs": [
+            "SYSTEIN kan deze voorwaarden wijzigen. De meest recente versie wordt op de website gepubliceerd. Door de diensten na een wijziging te blijven gebruiken ga je akkoord met de aangepaste voorwaarden."
+          ]
+        }
+      ]
+    },
+    "imprint": {
+      "title": "Juridische kennisgeving",
+      "intro": [
+        "SYSTEIN Solutions – Eenmanszaak is verantwoordelijk voor deze website en de hier aangeboden AI-diensten.",
+        "De onderstaande informatie voldoet aan de wettelijke informatieplicht (Impressum) onder Nederlands recht."
+      ],
+      "sections": [
+        {
+          "title": "Bedrijfsgegevens",
+          "list": [
+            "De Lismortel 42 366, 5612 AR Eindhoven, Nederland",
+            "Rechtsvorm: Eenmanszaak",
+            "Rechtsgebied: Nederland"
+          ]
+        },
+        {
+          "title": "Contact",
+          "list": [
+            "E-mail: info@systein.nl",
+            "Website: www.systein.nl"
+          ]
+        },
+        {
+          "title": "Doel van de website",
+          "paragraphs": [
+            "SYSTEIN levert AI-software en gerelateerde diensten, waaronder het AI-coachsysteem Coach Irene. Alle informatie op deze website is uitsluitend bedoeld voor algemene informatiedoeleinden en kan zonder voorafgaande kennisgeving worden gewijzigd."
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "paragraphs": [
+            "Hoewel wij ons inspannen om de informatie actueel en juist te houden, geeft SYSTEIN geen garanties over de volledigheid, juistheid, betrouwbaarheid of beschikbaarheid van de website of de verstrekte informatie. Gebruik van de website en diensten is geheel voor eigen risico."
+          ]
+        },
+        {
+          "title": "AI-disclaimer",
+          "paragraphs": [
+            "Door AI gegenereerde output kan onjuist, onvolledig of niet passend zijn. De website en diensten vormen geen medisch, psychologisch, juridisch of financieel advies en vervangen geen professionele zorg of consult."
+          ]
+        },
+        {
+          "title": "Aansprakelijkheid",
+          "paragraphs": [
+            "SYSTEIN is niet aansprakelijk voor schade die voortvloeit uit of verband houdt met het gebruik van deze website of de diensten, behalve voor zover aansprakelijkheid op grond van toepasselijk recht niet kan worden uitgesloten."
+          ]
+        }
+      ]
+    }
+  }
 }

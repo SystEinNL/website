@@ -3,7 +3,9 @@
   "text": "SystEin builds tailored AI agents that solve real problems, not just demo problems. Our first product, Coach Irene, is an ADHD-focused coach that helps you turn intentions into action with gentle, structured support.",
   "button": [
     {
-      "title": "Meet Coach Irene"
+      "title": "Meet Coach Irene",
+      "link": "https://wa.me/3197010274600",
+      "target": "_blank"
     },
     {
       "title": "Work with SystEin",

@@ -88,7 +88,7 @@ export const Empty = styled("div")`
 `;
 
 export const FooterContainer = styled("div")`
-  max-width: 510px;
+  max-width: 200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -110,7 +110,7 @@ export const FooterContainer = styled("div")`
     width: auto;
 
     a:not(:last-child) {
-      display: none;
+      padding-right: 20px;
     }
   }
 

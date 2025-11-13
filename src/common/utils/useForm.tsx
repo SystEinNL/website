@@ -13,6 +13,14 @@ const initialValues: IValues = {
   message: "",
 };
 
+const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_EMAIL || "info@systein.nl";
+const CONTACT_ENDPOINT =
+  process.env.REACT_APP_CONTACT_ENDPOINT ||
+  (CONTACT_EMAIL ? `https://formsubmit.co/ajax/${CONTACT_EMAIL}` : "");
+const CONTACT_SUBJECT =
+  process.env.REACT_APP_CONTACT_SUBJECT ||
+  "New message from the SystEin contact form";
+
 export const useForm = (validate: { (values: IValues): IValues }) => {
   const [formState, setFormState] = useState<{
     values: IValues;
@@ -22,47 +30,65 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     errors: { ...initialValues },
   });
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const formElement = event.currentTarget;
     const values = formState.values;
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    if (!CONTACT_ENDPOINT) {
+      notification["error"]({
+        message: "Error",
+        description:
+          "Contact endpoint is not configured. Please try again later.",
+      });
+      return;
+    }
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
+        const response = await fetch(CONTACT_ENDPOINT, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Accept: "application/json",
           },
-          body: JSON.stringify(values),
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            _subject: CONTACT_SUBJECT,
+            _captcha: "false",
+          }),
         });
 
         if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
-          event.target.reset();
-          setFormState(() => ({
-            values: { ...initialValues },
-            errors: { ...initialValues },
-          }));
-
-          notification["success"]({
-            message: "Success",
-            description: "Your message has been sent!",
-          });
+          const errorBody = await response.json().catch(() => null);
+          throw new Error(
+            errorBody?.message ||
+              "There was an error sending your message, please try again later."
+          );
         }
+
+        formElement.reset();
+        setFormState(() => ({
+          values: { ...initialValues },
+          errors: { ...initialValues },
+        }));
+
+        notification["success"]({
+          message: "Success",
+          description: "Your message has been sent!",
+        });
       }
     } catch (error) {
       notification["error"]({
         message: "Error",
-        description: "Failed to submit form. Please try again later.",
+        description:
+          error instanceof Error
+            ? error.message
+            : "Failed to submit form. Please try again later.",
       });
     }
   };
