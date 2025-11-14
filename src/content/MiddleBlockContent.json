@@ -1,5 +1,6 @@
 {
   "title": "What We Do",
   "text": "SystEin turns fuzzy ideas into concrete AI solutions. Right now, that means Coach Irene: a digital ADHD coach that helps people plan their day, break tasks into steps, and stay on track without judgment. All content is fully configurable, so your AI agents can adapt to your brand and your users.",
-  "button": "Get started"
+  "button": "Get started",
+  "buttonTarget": "mission"
 }

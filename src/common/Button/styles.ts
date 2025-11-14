@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const StyledButton = styled("button")<{ color?: string }>`
+export const StyledButton = styled("button")<{ color?: string; fullWidth?: boolean }>`
   background: ${(p) => p.color || "#2e186a"};
   color: ${(p) => (p.color ? "#2E186A" : "#fff")};
   font-size: 1rem;
   font-weight: 700;
-  width: 100%;
+  width: ${(p) => (p.fullWidth ? "100%" : "100%")};
   display: inline-block;
   text-align: center;
   border: 1px solid #edf3f5;
@@ -13,7 +13,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   padding: 13px 0;
   cursor: pointer;
   margin-top: 0.625rem;
-  max-width: 180px;
+  max-width: ${(p) => (p.fullWidth ? "100%" : "180px")};
   transition: all 0.3s ease-in-out;
   box-shadow: 0 16px 30px rgb(23 31 114 / 20%);
 

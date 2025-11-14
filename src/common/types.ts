@@ -12,6 +12,7 @@ export interface ButtonProps {
   href?: string;
   target?: string;
   rel?: string;
+  fullWidth?: boolean;
 }
 
 export interface SvgIconProps {

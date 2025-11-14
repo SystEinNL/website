@@ -8,12 +8,14 @@ export const Button = ({
   href,
   target,
   rel,
+  fullWidth,
 }: ButtonProps) => {
   if (href) {
     return (
       <StyledButton
         as="a"
         color={color}
+        fullWidth={fullWidth}
         href={href}
         target={target}
         rel={rel || "noopener noreferrer"}
@@ -24,7 +26,7 @@ export const Button = ({
   }
 
   return (
-    <StyledButton color={color} onClick={onClick}>
+    <StyledButton color={color} onClick={onClick} fullWidth={fullWidth}>
       {children}
     </StyledButton>
   );

@@ -1,0 +1,16 @@
+{
+  "title": "IreneIntroTitle",
+  "text": "IreneIntroText",
+  "button": [
+    {
+      "title": "Talk to Irene",
+      "link": "https://wa.me/3197010274600",
+      "target": "_blank"
+    },
+    {
+      "title": "Pricing Plans",
+      "link": "#hire-irene",
+      "color": "#fff"
+    }
+  ]
+}

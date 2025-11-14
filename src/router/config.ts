@@ -15,6 +15,11 @@ const routes = [
     component: "Terms",
   },
   {
+    path: "/Irene",
+    exact: true,
+    component: "Irene",
+  },
+  {
     path: "/Imprint",
     exact: true,
     component: "Imprint",

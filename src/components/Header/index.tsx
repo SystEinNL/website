@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
+import { useHistory } from "react-router-dom";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -18,6 +19,7 @@ import {
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const history = useHistory();
 
   const toggleButton = () => {
     setVisibility(!visible);
@@ -31,11 +33,20 @@ const Header = ({ t }: { t: TFunction }) => {
           behavior: "smooth",
         });
       } else if (typeof window !== "undefined") {
-        const target = `/#${id}`;
-        if (window.location.pathname !== "/" && window.location.pathname !== "/Home") {
-          window.location.href = target;
-        }
+        history.push({ pathname: "/", hash: `#${id}` });
       }
+      setVisibility(false);
+    };
+
+    const goToFlagship = () => {
+      if (typeof window !== "undefined" && window.location.pathname === "/Irene") {
+        const element = document.getElementById("irene-intro");
+        element?.scrollIntoView({ behavior: "smooth" });
+        setVisibility(false);
+        return;
+      }
+
+      history.push("/Irene");
       setVisibility(false);
     };
     return (
@@ -46,8 +57,8 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+        <CustomNavLinkSmall onClick={goToFlagship}>
+          <Span>{t("Flagship")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}

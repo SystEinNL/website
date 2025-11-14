@@ -7,16 +7,26 @@ import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
 interface MiddleBlockProps {
   title: string;
   content: string;
-  button: string;
+  button?: string;
+  buttonTarget?: string;
   t: TFunction;
 }
 
-const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
+const MiddleBlock = ({
+  title,
+  content,
+  button,
+  buttonTarget = "mission",
+  t,
+}: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+    const element = document.getElementById(id) as HTMLDivElement | null;
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <MiddleBlockSection>
@@ -27,7 +37,7 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button name="submit" onClick={() => scrollTo(buttonTarget)}>
                   {t(button)}
                 </Button>
               )}

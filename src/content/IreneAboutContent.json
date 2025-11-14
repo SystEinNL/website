@@ -1,0 +1,16 @@
+{
+  "title": "IreneAboutTitle",
+  "text": "IreneAboutText",
+  "section": [
+    {
+      "title": "IreneSocialTitle",
+      "content": "IreneSocialContent",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "IreneChessTitle",
+      "content": "IreneChessContent",
+      "icon": "notes.svg"
+    }
+  ]
+}
