@@ -2,6 +2,7 @@ import { lazy } from "react";
 import IreneIntroContent from "../../content/IreneIntroContent.json";
 import IreneMiddleBlockContent from "../../content/IreneMiddleBlockContent.json";
 import IreneAboutContent from "../../content/IreneAboutContent.json";
+import IreneRoleplayContent from "../../content/IreneRoleplayContent.json";
 
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -35,6 +36,13 @@ const Irene = () => {
         section={IreneAboutContent.section}
         icon="chess.svg"
         id="irene-about"
+      />
+      <ContentBlock
+        direction="right"
+        title={IreneRoleplayContent.title}
+        content={IreneRoleplayContent.text}
+        icon={IreneRoleplayContent.icon}
+        id={IreneRoleplayContent.id}
       />
       <IrenePlans />
       <Contact

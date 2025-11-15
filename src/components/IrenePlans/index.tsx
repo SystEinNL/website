@@ -7,38 +7,72 @@ import {
   PlansHeader,
   PlansTitle,
   PlansSubtitle,
+  PlansSubtitleHighlight,
   PlansGrid,
   PlanCard,
   PlanBadge,
   PlanName,
-  PlanShift,
   PlanPrice,
   PlanBullets,
   PlanBullet,
+  PlanBulletDescription,
+  PlanBulletWrapper,
+  LearnMoreButton,
 } from "./styles";
 
 const WHATSAPP_BASE = "https://wa.me/3197010274600";
 
-const planConfig = [
+interface PlanBulletConfig {
+  labelKey: string;
+  descriptionKey?: string;
+  tooltipKey?: string;
+}
+
+interface PlanCardConfig {
+  key: string;
+  copyPrefix: string;
+  buttonColor?: string;
+  badgeKey?: string;
+  featured?: boolean;
+  bullets: PlanBulletConfig[];
+}
+
+const planConfig: PlanCardConfig[] = [
   {
     key: "starter",
     copyPrefix: "Starter",
-    bulletKeys: [
-      "StarterBulletOne",
-      "StarterBulletTwo",
-      "StarterBulletThree",
-      "StarterBulletFour",
-    ],
     buttonColor: "#fff",
+    bullets: [
+      {
+        labelKey: "StarterRoleplayTitle",
+        descriptionKey: "StarterRoleplayDescription",
+      },
+      { labelKey: "StarterCallCredit" },
+      { labelKey: "StarterReplies" },
+      {
+        labelKey: "StarterAdaptiveTitle",
+        descriptionKey: "StarterAdaptiveDescription",
+      },
+    ],
   },
   {
     key: "advanced",
     copyPrefix: "Advanced",
-    bulletKeys: [
-      "AdvancedBulletOne",
-      "AdvancedBulletTwo",
-      "AdvancedBulletThree",
-      "AdvancedBulletFour",
+    bullets: [
+      {
+        labelKey: "AdvancedRoleplayTitle",
+        descriptionKey: "AdvancedRoleplayDescription",
+      },
+      { labelKey: "AdvancedCall" },
+      { labelKey: "AdvancedReplies" },
+      {
+        labelKey: "AdvancedAdaptiveTitle",
+        descriptionKey: "StarterAdaptiveDescription",
+      },
+      {
+        labelKey: "AdvancedAutopilotTitle",
+        descriptionKey: "AdvancedAutopilotDescription",
+      },
     ],
     badgeKey: "AdvancedBadge",
     featured: true,
@@ -46,8 +80,27 @@ const planConfig = [
   {
     key: "elite",
     copyPrefix: "Elite",
-    bulletKeys: ["EliteBulletOne", "EliteBulletTwo", "EliteBulletThree"],
     buttonColor: "#fff",
+    bullets: [
+      {
+        labelKey: "EliteRoleplayTitle",
+        descriptionKey: "EliteRoleplayDescription",
+      },
+      { labelKey: "EliteCalls" },
+      { labelKey: "EliteReplies" },
+      {
+        labelKey: "EliteAdaptiveTitle",
+        descriptionKey: "StarterAdaptiveDescription",
+      },
+      {
+        labelKey: "EliteAutopilotTitle",
+        descriptionKey: "AdvancedAutopilotDescription",
+      },
+      {
+        labelKey: "EliteInterventionTitle",
+        descriptionKey: "EliteInterventionDescription",
+      },
+    ],
   },
 ];
 
@@ -68,15 +121,26 @@ const IrenePlans = () => {
       <Slide direction="up" triggerOnce>
         <PlansHeader>
           <PlansTitle>{t("HireIreneTitle")}</PlansTitle>
-          <PlansSubtitle>{t("HireIreneSubtitle")}</PlansSubtitle>
+          <PlansSubtitle>
+            {t("HireIreneSubtitle")
+              .split(t("HireIreneHighlight"))
+              .map((segment, index, arr) => (
+                <span key={index}>
+                  {segment}
+                  {index < arr.length - 1 && (
+                    <PlansSubtitleHighlight>
+                      {t("HireIreneHighlight")}
+                    </PlansSubtitleHighlight>
+                  )}
+                </span>
+              ))}
+          </PlansSubtitle>
         </PlansHeader>
         <PlansGrid>
           {planConfig.map((plan) => {
             const prefix = plan.copyPrefix;
             const name = getCopy(`${prefix}Name`);
-            const shift = getCopy(`${prefix}Shift`);
             const price = getCopy(`${prefix}Price`);
-            const bullets = plan.bulletKeys.map((key) => getCopy(key));
             const template =
               getCopy("MessageTemplate") ||
               "Hello, I want the {{plan}} subscription plan.";
@@ -91,14 +155,32 @@ const IrenePlans = () => {
                   <PlanBadge>{getCopy(plan.badgeKey)}</PlanBadge>
                 )}
                 <PlanName>{name}</PlanName>
-                <PlanShift>{shift}</PlanShift>
                 <PlanPrice>{price}</PlanPrice>
                 <PlanBullets>
-                  {bullets.map((bullet, index) => (
-                    <PlanBullet key={`${plan.key}-bullet-${index}`}>
-                      {bullet}
-                    </PlanBullet>
-                  ))}
+                  {plan.bullets.map((bullet, index) => {
+                    const label = getCopy(bullet.labelKey);
+                    const description = bullet.descriptionKey
+                      ? getCopy(bullet.descriptionKey)
+                      : "";
+
+                    return (
+                      <PlanBullet key={`${plan.key}-bullet-${index}`}>
+                      <PlanBulletWrapper>
+                        {label}
+                        {description && (
+                          <>
+                            <LearnMoreButton type="button">
+                              {t("LearnMore")}
+                            </LearnMoreButton>
+                            <PlanBulletDescription>
+                              {description}
+                            </PlanBulletDescription>
+                          </>
+                        )}
+                      </PlanBulletWrapper>
+                      </PlanBullet>
+                    );
+                  })}
                 </PlanBullets>
                 <Button
                   href={href}
